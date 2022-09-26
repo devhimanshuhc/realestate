@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Flex, Box, Text, Icon } from "@chakra-ui/react";
-import { BsFilter, BsSearch } from "react-icons/bs";
+import { BsFilter } from "react-icons/bs";
 import SearchFilters from "./SearchFilters";
-import noresult from "../img/noresult.svg";
 import PropertyItems from "./PropertyItems";
 
 const Property = () => {
