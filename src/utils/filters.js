@@ -10,7 +10,7 @@ export const filterData = [
       { name: "85,000", value: "85000" },
     ],
     placeholder: "Min Price(AED)",
-    queryName: "minPrice",
+    queryName: "priceMin",
   },
   {
     items: [
@@ -32,7 +32,7 @@ export const filterData = [
       { name: "1000,000", value: "1000000" },
     ],
     placeholder: "Max Price(AED)",
-    queryName: "maxPrice",
+    queryName: "priceMax",
   },
   {
     items: [
@@ -52,16 +52,16 @@ export const filterData = [
 ];
 
 export const getFilterValues = (filterValues) => {
-  const { categoryExternalID, minPrice, maxPrice, locationExternalIDs } =
+  const { categoryExternalID, priceMax, priceMin, locationExternalIDs } =
     filterValues;
   const values = [
     {
-      name: "minPrice",
-      value: minPrice,
+      name: "priceMin",
+      value: priceMin,
     },
     {
-      name: "maxPrice",
-      value: maxPrice,
+      name: "priceMax",
+      value: priceMax,
     },
     {
       name: "locationExternalIDs",
